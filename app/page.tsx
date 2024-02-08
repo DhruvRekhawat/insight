@@ -22,7 +22,7 @@ export default function Home() {
       <section className='grid md:grid-cols-1 lg:grid-cols-2 grid-cols-1 px-6 py-4 h-auto '>
         <div className='mb-4 py-4 px-2'>
         <h1 className='text-4xl sm:text-6xl font-bold place-self-center'>
-          Join <span className='bg-gradient-to-r bg-clip-text text-transparent from-green-600 to-lime-600'>Lucknow's Number One</span> Coaching Institute
+          Join <span className='bg-gradient-to-r bg-clip-text text-transparent from-green-600 to-lime-600'>Lucknow&apos;s Number One</span> Coaching Institute
         </h1>
         <p className='text-2xl font-sans mt-2'>Ab harr bachha karega crack!</p>
         <div className='mt-12 flex flex-wrap gap-4'>
@@ -61,7 +61,7 @@ export default function Home() {
           <div className='flex flex-col justify-center items-center'>
           <Image src={Image7} height={512} width={400} alt='illustration1'></Image>
           <h2 className=' text-2xl sm:text-3xl font-bold place-self-center'>Learn from anywhere!</h2>
-          <p className=' text-wrap text-center px-6'>iNsight's online learning platform empowers you to learn new skills and accomplish real growth.</p>
+          <p className=' text-wrap text-center px-6'>iNsight&apos;s online learning platform empowers you to learn new skills and accomplish real growth.</p>
           </div>
       </section>
       <section className='px-6 py-4 my-4 '>
