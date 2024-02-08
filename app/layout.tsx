@@ -2,6 +2,11 @@ import type { Metadata } from 'next'
 import { Inter,Laila } from 'next/font/google'
 import './globals.css'
 import Navbar from '../components/navbar'
+import Icon from '@/assets/iNsightLogo.webp'
+import Logo from '@/components/ui/logo'
+import Link from 'next/link'
+import { Youtube } from 'lucide-react'
+import { InstagramIcon } from 'lucide-react'
 
 const inter = Inter({ subsets: ['latin'] })
 const laila = Laila({
@@ -22,7 +27,7 @@ export const metadata: Metadata = {
   
   Join the ranks of successful students who have benefitted from Insight Coaching in Lucknow, Aliganj. Prepare for a bright future with our transformative educational approach. Enroll now to unlock your academic potential and excel in exams and beyond.`,
   icons : {
-    icon: 'iNsightLogo.webp'
+    icon: '@/assets/iNsightLogo.webp'
   }
   
 }
@@ -38,8 +43,51 @@ export default function RootLayout({
       <body>
       <Navbar></Navbar>
         {children}
-        <footer className='w-full bg-lime-400 grid-cols-3 md:grid-cols-4'>
-        footer        
+        <footer className='w-full bg-lime-400 grid grid-cols-3 md:grid-cols-4 px-12 py-4'>
+        <div>
+          <Logo></Logo>
+        </div>
+          <div className='px-4'>
+              <h3 className='font-bold text-lg text-green-700'>Address</h3>
+              <p className='text-green-800'>B1-65, sector -P, near shyam swad restaurant, Beligarad, Aliganj, Lucknow, Uttar Pradesh 226026</p>
+          </div>        
+          <div>
+              <h3 className='font-bold text-lg text-green-700'>Important Links</h3>
+              <ul className='flex gap-4'>
+                <li>
+                  <h4 className='font-semibol text-md text-green-700 underline'>Notes</h4>
+                  <Link href='/'><p className='text-green-800'>JEE Mains</p></Link>
+                  <Link href='/'><p className='text-green-800'>JEE Advanced</p></Link>
+                  <Link href='/'><p className='text-green-800'>NEET</p></Link>
+                  <Link href='/'><p className='text-green-800'>CUET</p></Link>
+                  <Link href='/'><p className='text-green-800'>ICSE Class 12th</p></Link>
+                  <Link href='/'><p className='text-green-800'>ICSE Class 11th</p></Link>
+                  <Link href='/'><p className='text-green-800'>CBSE Class 12th</p></Link>
+                  <Link href='/'><p className='text-green-800'>CBSE Class 11th</p></Link>
+                  <Link href='/'><p className='text-green-800'>UP Board Class 12th</p></Link>
+                  <Link href='/'><p className='text-green-800'>UP Board Class 11th</p></Link>
+                </li>
+                <li>
+                  <h4 className='font-semibol text-md text-green-700 underline'>Courses</h4>
+                  <Link href='/'><p className='text-green-800'>JEE Mains</p></Link>
+                  <Link href='/'><p className='text-green-800'>JEE Advanced</p></Link>
+                  <Link href='/'><p className='text-green-800'>NEET</p></Link>
+                  <Link href='/'><p className='text-green-800'>CUET</p></Link>
+                  <Link href='/'><p className='text-green-800'>ICSE Class 12th</p></Link>
+                  <Link href='/'><p className='text-green-800'>ICSE Class 11th</p></Link>
+                  <Link href='/'><p className='text-green-800'>CBSE Class 12th</p></Link>
+                  <Link href='/'><p className='text-green-800'>CBSE Class 11th</p></Link>
+                  <Link href='/'><p className='text-green-800'>UP Board Class 12th</p></Link>
+                  <Link href='/'><p className='text-green-800'>UP Board Class 11th</p></Link>
+                </li>
+              </ul>
+          </div>  
+          <div>
+            <h3 className='font-bold text-lg text-green-700'>Contact Us</h3>
+            <p className='font-green-600'>Phone: +91 07905431059 </p>
+            <h3 className='font-bold text-lg text-green-700'>Follow Us</h3>
+            <a href="https://www.youtube.com/@insightclasseslko/videos" target='_blank' className='text-green-600 font-semibold underline'>Youtube</a>
+            </div>      
       </footer>
         </body>
     </html>
