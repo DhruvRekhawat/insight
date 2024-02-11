@@ -71,9 +71,7 @@ const Navbar = () => {
             <li>
             <Link href={'/'} className="hover:text-lime-600">Home</Link>
             </li>
-            <li>
-            <Link href={'/about'} className="hover:text-lime-600">About</Link>
-            </li>
+            
             <li>
             <NavigationMenu>
             <NavigationMenuItem >
@@ -113,9 +111,7 @@ const Navbar = () => {
             <li className="m-2">
             <Link href={'/'} className="hover:text-lime-600 mt-8">Home</Link>
             </li>
-            <li className="m-2">
-            <Link href={'/about'} className="hover:text-lime-600 mt-2">About</Link>
-            </li>
+            
             <li className="m-2">
             <Link href={'/courses'} className="hover:text-lime-600 mt-2">Courses</Link>
             </li>

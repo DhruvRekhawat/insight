@@ -43,7 +43,7 @@ export default function RootLayout({
       <body>
       <Navbar></Navbar>
         {children}
-        <footer className='w-full bg-lime-400 grid grid-cols-2 md:grid-cols-4 px-6 py-4'>
+        <footer className='w-full bg-lime-400 grid grid-cols-1 md:grid-cols-4 px-6 py-4'>
         <div>
           <Logo></Logo>
         </div>
@@ -51,9 +51,15 @@ export default function RootLayout({
               <h3 className='font-bold text-lg text-green-700'>Address</h3>
               <p className='text-green-800'>B1-65, sector -P, near shyam swad restaurant, Beligarad, Aliganj, Lucknow, Uttar Pradesh 226026</p>
           </div>        
+          <div className='px-4'>
+            <h3 className='font-bold text-lg text-green-700'>Contact Us</h3>
+            <p className='font-green-600'>Phone: +91 07905431059 </p>
+            <h3 className='font-bold text-lg text-green-700'>Follow Us</h3>
+            <a href="https://www.youtube.com/@insightclasseslko/videos" target='_blank' className='text-green-600 font-semibold underline'>Youtube</a>
+            </div>      
           <div>
               <h3 className='font-bold text-lg text-green-700'>Important Links</h3>
-              <ul className='flex gap-4 px-4'>
+              <ul className='flex flex-col gap-4 px-4'>
                 <li>
                   <h4 className='font-semibol text-md text-green-700 underline'>Notes</h4>
                   <Link href='/notes/jee'><p className='text-green-800'>JEE Mains</p></Link>
@@ -82,12 +88,6 @@ export default function RootLayout({
                 </li>
               </ul>
           </div>  
-          <div className='px-4'>
-            <h3 className='font-bold text-lg text-green-700'>Contact Us</h3>
-            <p className='font-green-600'>Phone: +91 07905431059 </p>
-            <h3 className='font-bold text-lg text-green-700'>Follow Us</h3>
-            <a href="https://www.youtube.com/@insightclasseslko/videos" target='_blank' className='text-green-600 font-semibold underline'>Youtube</a>
-            </div>      
       </footer>
         </body>
     </html>

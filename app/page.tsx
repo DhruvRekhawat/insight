@@ -16,6 +16,7 @@ import Autoplay from "embla-carousel-autoplay"
 import { Star } from 'lucide-react'
 import { Form } from '@/components/ui/form'
 import AdmissionForm from '@/components/AdmissionForm'
+import Link from 'next/link'
 export default function Home() {
   return (
     <main className="flex py-2 px-0 md:px-6 flex-col ">
@@ -26,8 +27,8 @@ export default function Home() {
         </h1>
         <p className='text-2xl font-sans mt-2'>Ab harr bachha karega crack!</p>
         <div className='mt-12 flex flex-wrap gap-4'>
-        <Button size="default" className='font-bold mt-2 '>Enroll Now</Button>
-        <Button variant="secondary" size="default" className='mt-2 font-bold'>View Courses</Button>
+        <Link href={"/admission"}><Button size="default" className='font-bold mt-2 '>Enroll Now</Button></Link>
+        <Link href={"/courses"}><Button variant="secondary" size="default" className='mt-2 font-bold'>View Courses</Button></Link>
         </div>
         </div>
         
