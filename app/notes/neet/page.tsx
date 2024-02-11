@@ -2,7 +2,9 @@ import React from 'react'
 
 const NEET = () => {
   return (
-    <div>NEET</div>
+    <main>
+      
+    </main>
   )
 }
 

@@ -67,9 +67,9 @@ export default function Home() {
       <section className='px-6 py-4 my-4 '>
         <ExploreNotes></ExploreNotes>
       </section>
-      <section>
+      {/* <section>
         explore courses
-      </section>
+      </section> */}
       <section className='px-12 py-4 flex flex-col'>
       <h2 className='place-self-center text-3xl font-bold pb-4 md:col-span-2 col-span-1 '>What our students say</h2>
       <div className='flex flex-wrap justify-center gap-4 p-8'>

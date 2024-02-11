@@ -100,9 +100,6 @@ const Navbar = () => {
             <Link href={'/admission'} className="hover:text-lime-600">Admission</Link>
             </li>
             <li>
-            <Link href={'/contact-us'} className="hover:text-lime-600">Contact Us</Link>
-            </li>
-            <li>
             <Button className="">
             <Link href={'/login'}>Login</Link>
             </Button>
@@ -143,9 +140,6 @@ const Navbar = () => {
             </li>
             <li className="m-2">
             <Link href={'/admission'} className="hover:text-lime-600 mt-2">Admission</Link>
-            </li>
-            <li className="m-2">
-            <Link href={'/contact-us'} className="hover:text-lime-600 mt-2">Contact Us</Link>
             </li>
             <li className="m-2">
             <Button className="mt-2">
