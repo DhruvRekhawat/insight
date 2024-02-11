@@ -18,7 +18,7 @@ import { Form } from '@/components/ui/form'
 import AdmissionForm from '@/components/AdmissionForm'
 export default function Home() {
   return (
-    <main className="flex p-2 px-6 flex-col ">
+    <main className="flex py-2 px-0 md:px-6 flex-col ">
       <section className='grid md:grid-cols-1 lg:grid-cols-2 grid-cols-1 px-6 py-4 h-auto '>
         <div className='mb-4 py-4 px-2'>
         <h1 className='text-4xl sm:text-6xl font-bold place-self-center'>
