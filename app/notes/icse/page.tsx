@@ -19,19 +19,19 @@ const ICSE = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4 m-4'>
           <h2 className='md:col-span-2 place-self-start text-xl md:text-2xl text-green-700 font-bold'>Mathematics</h2>
         {
-          jeeMathematicsSubjects.map(function(value:object){return(<SecondaryCard title={value.title} slug={value.slug}></SecondaryCard>)})
+          jeeMathematicsSubjects.map(function(value:object,key){return(<SecondaryCard title={value.title} slug={value.slug} key={key}></SecondaryCard>)})
         }
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4 m-4'>
           <h2 className='md:col-span-2 place-self-start text-xl md:text-2xl text-green-700 font-bold'>Chemistry</h2>
         {
-          chemistrySubjects.map(function(value:object){return(<SecondaryCard title={value.title} slug={value.slug}></SecondaryCard>)})
+          chemistrySubjects.map(function(value:object,key){return(<SecondaryCard title={value.title} slug={value.slug} key={key}></SecondaryCard>)})
         }
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4 m-4'>
           <h2 className='md:col-span-2 place-self-start text-xl md:text-2xl text-green-700 font-bold'>Physics</h2>
         {
-          physicsSubjects.map(function(value:object){return(<SecondaryCard title={value.title} slug={value.slug}></SecondaryCard>)})
+          physicsSubjects.map(function(value:object,key){return(<SecondaryCard title={value.title} slug={value.slug} key={key}></SecondaryCard>)})
         }
         </div>
 
