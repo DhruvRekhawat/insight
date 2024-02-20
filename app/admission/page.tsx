@@ -6,7 +6,7 @@ const Admission = () => {
   return (
     <main className='flex flex-col justify-center items-center'>
       <h1 className='text-2xl md:text-4xl slide-in-from-bottom-full font-bold bg-gradient-to-r from-green-500 to-cyan-500 bg-clip-text text-transparent'>Attend a demo class for free!</h1>
-      <Card className='py-2 px-3 md:py-8 md:px-12 m-8 flex flex-col gap-4 '>
+      <Card className='py-4 px-3 md:py-8 md:px-12 m-8 flex flex-col gap-4 w-2/3'>
         <CardTitle>Fill the form below</CardTitle>
         <CardDescription>Our team will contact you shortly</CardDescription>
       <AdmissionForm ></AdmissionForm>
