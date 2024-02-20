@@ -1,4 +1,8 @@
-export const biologyChapterNames:Array<{title:string,slug:string}> = 
+export interface ChapterNames{
+  title:string,slug:string
+}
+
+export const biologyChapterNames:Array<ChapterNames> = 
  [
   { title: "Diversity in Living World", slug: "diversity-living-world" },
   { title: "Structural Organization in Animals and Plants", slug: "structural-organization" },
@@ -12,7 +16,7 @@ export const biologyChapterNames:Array<{title:string,slug:string}> =
   { title: "Ecology and Environment", slug: "ecology-environment" }
 ];
 
-export const chemistrySubjects:Array<{title:string,slug:string}> = [
+export const chemistrySubjects:Array<ChapterNames> = [
   { title: "Some Basic Concepts of Chemistry", slug: "basic-concepts" },
   { title: "Structure of Atom", slug: "structure-of-atom" },
   { title: "Classification of Elements and Periodicity in Properties", slug: "element-classification" },
@@ -45,7 +49,7 @@ export const chemistrySubjects:Array<{title:string,slug:string}> = [
   { title: "Chemistry in Everyday Life", slug: "chemistry-in-everyday-life" }
 ];
 
-export const physicsSubjects:Array<{title:string,slug:string}> = [
+export const physicsSubjects:Array<ChapterNames> = [
   { title: "Physical World and Measurement", slug: "physical-world-measurement" },
   { title: "Kinematics", slug: "kinematics" },
   { title: "Laws of Motion", slug: "laws-of-motion" },
@@ -67,7 +71,7 @@ export const physicsSubjects:Array<{title:string,slug:string}> = [
   { title: "Electronic Devices", slug: "electronic-devices" }
 ];
 
-export const jeeMathematicsSubjects:Array<{title:string,slug:string}> = [
+export const jeeMathematicsSubjects:Array<ChapterNames> = [
     { title: "Sets, Relations, and Functions", slug: "sets-relations-functions" },
     { title: "Complex Numbers and Quadratic Equations", slug: "complex-numbers-quadratic-equations" },
     { title: "Matrices and Determinants", slug: "matrices-determinants" },
