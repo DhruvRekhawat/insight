@@ -5,12 +5,12 @@ const CUET = () => {
   return (
     <main>
       <div className="flex flex-col justify-center items-start  p-4">
-        <h1 className="text-2xl md:text-4xl font-bold">Joint Entrance Exam </h1>
+        <h1 className="text-2xl md:text-4xl font-bold">CUET </h1>
         <p className='m-4'>
-          The JEE Revision Notes are curated for the JEE
-          aspirants who are aspiring to excel in their JEE exams. These
+          The CUET Revision Notes are curated for the CUET
+          aspirants who are aspiring to excel in their CUET exams. These
           revision notes will justify the preparation of the students and will
-          help them to do a quick study before the examination day. The JEE
+          help them to do a quick study before the examination day. The CUET
           aspirants will now have the resort to these revision notes, and
           they do not have to go through lengthy textbooks before the
           examination day.
