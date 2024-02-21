@@ -106,7 +106,6 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-            <UserButton afterSignOutUrl="/"></UserButton>
          
         </li>
       </ul>
@@ -165,7 +164,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-            <UserButton afterSignOutUrl="/"></UserButton>
+            
         </li>
           </ul>
         </div>
