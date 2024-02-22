@@ -4,7 +4,7 @@ export interface ChapterNames{
 
 export const biologyChapterNames:Array<ChapterNames> = 
  [
-  { title: "Diversity in Living World", slug: "diversity-living-world" },
+  { title: "Diversity in Living World", slug: "diversity-in-living-world" },
   { title: "Structural Organization in Animals and Plants", slug: "structural-organization" },
   { title: "Cell Structure and Function", slug: "cell-structure-function" },
   { title: "Plant Physiology", slug: "plant-physiology" },

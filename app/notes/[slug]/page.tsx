@@ -1,9 +1,10 @@
 import { client } from "@/lib/sanity"
 import {PortableText} from '@portabletext/react'
+// import { useParams } from "next/navigation"
 
-async function getData() {
-  const slug = 'class-11-physics-motion-in-a-straight-line'
-  const query = `*[slug.current == "class-11-physics-motion-in-a-straight-line"]{
+async function getData(slug:string) {
+  // const params = useParams<{ slug: string}>()
+  const query = `*[slug.current == '${slug}']{
     title,
     pdf,
     content
@@ -14,8 +15,8 @@ async function getData() {
   return data
 }
 
-async function note()  {
-  const data = await getData()
+async function note({params}:{params:{slug:string}})  {
+  const data = await getData(params.slug)
   console.log(data)
   return (
     <div className="p-2 md:p-4"> 
@@ -24,6 +25,7 @@ async function note()  {
         <div className="mt-16 prose">
         <PortableText value={data.content}></PortableText>
         </div>
+        <a href="https://www.vedantu.com/content-files-downloadable/revision-notes/cbse-class-11-biology-notes-chapter-1.pdf" download>pdf</a>
     
     </div>
   )
