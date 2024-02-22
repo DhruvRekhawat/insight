@@ -10,11 +10,7 @@ const page = () => {
     <h1 className='w-full px-8 text-start text-xl md:text-3xl font-bold text-red-500'>Subscribe to the official Youtube Channel</h1>
     <div className='px-8 my-2'>
     <p>Follow the official iNsight Youtube channel for regular updates and revision lectures </p>
-
     <Link href="https://www.youtube.com/@insightclasseslko"><Button variant={"default"}className="mt-2">Visit Channel</Button></Link>
-
-    <Button variant={"default"}className="mt-2">Visit Channel</Button>
-
     </div>
     
     <div className='grid grid-cols-1 md:grid-cols-2 gap-8 p-8 place-items-center'>
