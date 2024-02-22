@@ -1,8 +1,7 @@
 import { Button } from '@/components/ui/button'
-<<<<<<< HEAD
+
 import Link from 'next/link'
-=======
->>>>>>> f063bf1d551d4f103a6a615db7c4e4f02fe91a3c
+
 import React from 'react'
 
 const page = () => {
@@ -11,11 +10,11 @@ const page = () => {
     <h1 className='w-full px-8 text-start text-xl md:text-3xl font-bold text-red-500'>Subscribe to the official Youtube Channel</h1>
     <div className='px-8 my-2'>
     <p>Follow the official iNsight Youtube channel for regular updates and revision lectures </p>
-<<<<<<< HEAD
+
     <Link href="https://www.youtube.com/@insightclasseslko"><Button variant={"default"}className="mt-2">Visit Channel</Button></Link>
-=======
+
     <Button variant={"default"}className="mt-2">Visit Channel</Button>
->>>>>>> f063bf1d551d4f103a6a615db7c4e4f02fe91a3c
+
     </div>
     
     <div className='grid grid-cols-1 md:grid-cols-2 gap-8 p-8 place-items-center'>
