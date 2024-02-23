@@ -19,7 +19,7 @@ export const biologyChapterNames:Array<ChapterNames> =
 export const chemistrySubjects:Array<ChapterNames> = [
   { title: "Some Basic Concepts of Chemistry", slug: "basic-concepts" },
   { title: "Structure of Atom", slug: "structure-of-atom" },
-  { title: "Classification of Elements and Periodicity in Properties", slug: "element-classification" },
+  { title: "Classification of Elements and Periodicity in Properties", slug: "periodic-table" },
   { title: "Chemical Bonding and Molecular Structure", slug: "chemical-bonding" },
   { title: "States of Matter: Gases and Liquids", slug: "states-of-matter" },
   { title: "Thermodynamics", slug: "thermodynamics" },
@@ -37,7 +37,7 @@ export const chemistrySubjects:Array<ChapterNames> = [
   { title: "Chemical Kinetics", slug: "chemical-kinetics" },
   { title: "Surface Chemistry", slug: "surface-chemistry" },
   { title: "General Principles and Processes of Isolation of Elements", slug: "isolation-of-elements" },
-  { title: "p-Block Elements", slug: "p-block-elements" },
+  { title: "p-Block Elements", slug: "p-block-elements-12" },
   { title: "d- and f-Block Elements", slug: "d-f-block-elements" },
   { title: "Coordination Compounds", slug: "coordination-compounds" },
   { title: "Haloalkanes and Haloarenes", slug: "haloalkanes-haloarenes" },
