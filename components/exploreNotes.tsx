@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const ExploreNotes = () => {
   return (
-    <div className="grid gird-cols-1 sm:grid-cols-2 bg-lime-400 px-6 gap-2 py-8 rounded-md">
+    <div className="grid gird-cols-1 sm:grid-cols-2 bg-blue-800 px-6 gap-2 py-8 rounded-md">
         <h2 className="col-span-1 sm:col-span-2 place-self-center text-3xl font-bold pb-4">Explore Notes</h2>
         <Link href={'/notes/jee'}><Card>
             <CardHeader>

@@ -1,5 +1,5 @@
 "use client"
-
+import toast from 'react-hot-toast'
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { string, z } from "zod"
@@ -64,6 +64,7 @@ const formSchema = z.object({
 })
 
 export default function AdmissionForm() {
+  const submitted = () => toast.success("Form submitted successfully!")
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -73,8 +74,23 @@ export default function AdmissionForm() {
           items:[],
         },
       })
-    function onSubmit(values: z.infer<typeof formSchema>) {
-        console.log(values)
+    async function onSubmit(values: z.infer<typeof formSchema>) {
+      console.log(values)
+        fetch("https://eckdfiftmmowcptxyzit.supabase.co/rest/v1/Students",{
+          method:"POST",
+          headers:{
+            apikey:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVja2RmaWZ0bW1vd2NwdHh5eml0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDY1MDEwMzQsImV4cCI6MjAyMjA3NzAzNH0.wxQ8bm7MtCQ4nqQCoCEaAI-Vy2FzunQOFvLCW6MzrpQ",
+            Authorization:"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVja2RmaWZ0bW1vd2NwdHh5eml0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDY1MDEwMzQsImV4cCI6MjAyMjA3NzAzNH0.wxQ8bm7MtCQ4nqQCoCEaAI-Vy2FzunQOFvLCW6MzrpQ",
+            "Content-type": "application/json",
+            Prefer: "return=minimal",
+          },
+          body:JSON.stringify([{
+            name:values.name,
+            phone:values.phone,
+            class:values.class,
+            course:values.items,
+          }])
+        }).then(()=>alert("Form Submitted!"))
       }
 
   return (

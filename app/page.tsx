@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import Image1 from '@/assets/cheerful-attractive-young-woman-with-black-hair-walking.webp'
+import Image1 from '@/assets/Knowledge-rafiki.svg'
 import Image2 from '@/assets/casual-clothes-portrait-attractive-young-woman-standing-office-with-black-bag.webp'
 import Image3 from '@/assets/smiling-happy-indian-student-with-backpack-pointing-his-finger-wall_1_.webp'
 import Image4 from '@/assets/istockphoto-1301397300-612x612-transformed.webp'
-import Image5 from '@/assets/10733824_4542740.webp'
-import Image6 from '@/assets/6572399_3312018.webp'
-import Image7 from '@/assets/5202271_Designer-girl.webp'
+import Image5 from '@/assets/Lesson-bro.svg'
+import Image6 from '@/assets/Mathematics-bro.svg'
+import Image7 from '@/assets/Online learning-bro.svg'
 import Image8 from '@/assets/9233873_4119037.webp'
 import Image9 from '@/assets/css-pattern-by-magicpattern.png'
 import ExploreNotes from '@/components/exploreNotes'
@@ -19,11 +19,11 @@ import AdmissionForm from '@/components/AdmissionForm'
 import Link from 'next/link'
 export default function Home() {
   return (
-    <main className="flex py-2 px-0 md:px-6 flex-col ">
-      <section className='grid md:grid-cols-1 lg:grid-cols-2 grid-cols-1 px-6 py-4 h-auto '>
+    <main className="flex flex-col ">
+      <section className='grid md:grid-cols-1 lg:grid-cols-2 grid-cols-1 px-12 py-4 h-auto text-white bg-blue-900'>
         <div className='mb-4 py-4 px-2'>
         <h1 className='text-4xl sm:text-6xl font-bold place-self-center'>
-          Join <span className='bg-gradient-to-r bg-clip-text text-transparent from-green-600 to-lime-600'>Lucknow&apos;s Number One</span> Coaching Institute
+          Join <span className=''>Lucknow&apos;s Number One</span> Coaching Institute
         </h1>
         <p className='text-2xl font-sans mt-2'>Ab harr bachha karega crack!</p>
         <div className='mt-12 flex flex-wrap gap-4'>
@@ -32,20 +32,11 @@ export default function Home() {
         </div>
         </div>
         
-        <div className='grid grid-flow-col grid-rows-2 p-4 gap-2'>
-          <div className='rounded-tr-3xl overflow-clip'>
+
+          <div className='rounded-2xl overflow-clip grid place-items-center'>
             <Image src={Image1} objectFit='cover' alt='student'></Image>
           </div>
-          <div className='rounded-tl-3xl overflow-clip'>
-                      <Image src={Image2} objectFit='cover' alt='student'></Image>
-                      </div>
-          <div className=' rounded-tl-3xl overflow-clip'>
-                      <Image src={Image3} objectFit='cover' alt='student'></Image>
-          </div>
-          <div className='rounded-lr-3xl overflow-clip'>
-          <Image src={Image4} objectFit='cover' alt='student'></Image>
-          </div>
-        </div>
+
       </section>
 
       <section className='grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 px-6 py-4 h-auto gap-2'>
@@ -65,7 +56,7 @@ export default function Home() {
           <p className=' text-wrap text-center px-6'>iNsight&apos;s online learning platform empowers you to learn new skills and accomplish real growth.</p>
           </div>
       </section>
-      <section className='px-6 py-4 my-4 '>
+      <section className='px-6 py-4 my-4 text-white'>
         <ExploreNotes></ExploreNotes>
       </section>
       {/* <section>
@@ -92,10 +83,10 @@ Nice experience</p></CardContent></Card></CarouselItem>
  
       </section>
 
-      <section className='bg-gradient-to-r from-orange-300 to-rose-300 p-4 rounded-md flex flex-col justify-center items-center'>
+      <section className='bg-gradient-to-r from-blue-800 to-cyan-800 p-4 flex flex-col justify-center items-center m-8 rounded-2xl'>
         <div>
 
-        <Card className='w-full mt-4'>
+        <Card className='w-full m-4 rounded-3xl'>
           <CardTitle className='p-6'>Get a chance to attend a demo class!</CardTitle>
           <CardContent>
             <AdmissionForm></AdmissionForm>
