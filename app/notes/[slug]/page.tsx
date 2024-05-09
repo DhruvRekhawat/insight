@@ -27,7 +27,7 @@ async function note({params}:{params:{slug:string}})  {
 
         <div className="mt-16 prose">
         <a href="https://www.vedantu.com/content-files-downloadable/revision-notes/cbse-class-11-biology-notes-chapter-1.pdf" download><Button className="w-full my-4" size={"lg"}>Download PDF</Button></a>
-          <Card className="py-8 px-2 md:px-16 bg-slate-100">
+          <Card className="py-8 px-16 bg-slate-100">
           <PortableText value={data.content}></PortableText>
           </Card>
         

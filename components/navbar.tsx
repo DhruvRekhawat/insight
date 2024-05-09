@@ -70,7 +70,7 @@ const Navbar = () => {
       <Logo></Logo>
       <ul className="gap-8 items-center hidden md:flex ">
         <li>
-          <Link href={"/"} className="hover:text-lime-600">
+          <Link href={"/"} className="hover:text-blue-600">
             Home
           </Link>
         </li>
@@ -96,12 +96,12 @@ const Navbar = () => {
           </NavigationMenu>
         </li>
         <li>
-          <Link href={"/courses"} className="hover:text-lime-600">
+          <Link href={"/courses"} className="hover:text-blue-600">
             Courses
           </Link>
         </li>
         <li>
-          <Link href={"/admission"} className="hover:text-lime-600">
+          <Link href={"/admission"} className="hover:text-blue-600">
             Admission
           </Link>
         </li>
@@ -126,22 +126,22 @@ const Navbar = () => {
           >
             <X></X>
           </Button>
-          <ul className="items-center flex flex-col p-8 justify-center bg-lime-200 rounded-lg shadow-md w-64 backdrop-blur-sm">
+          <ul className="items-center flex flex-col p-8 justify-center bg-blue-200 rounded-lg shadow-md w-64 backdrop-blur-sm">
             <li className="m-2">
-              <Link href={"/"} className="hover:text-lime-600 mt-8">
+              <Link href={"/"} className="hover:text-blue-600 mt-8">
                 Home
               </Link>
             </li>
 
             <li className="m-2">
-              <Link href={"/courses"} className="hover:text-lime-600 mt-2">
+              <Link href={"/courses"} className="hover:text-blue-600 mt-2">
                 Courses
               </Link>
             </li>
             <li className="m-2">
               <NavigationMenu>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="p-3 bg-lime-200 text-md ">
+                  <NavigationMenuTrigger className="p-3 bg-blue-200 text-md ">
                     Notes
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -159,7 +159,7 @@ const Navbar = () => {
               </NavigationMenu>
             </li>
             <li className="m-2">
-              <Link href={"/admission"} className="hover:text-lime-600 mt-2">
+              <Link href={"/admission"} className="hover:text-blue-600 mt-2">
                 Admission
               </Link>
             </li>
