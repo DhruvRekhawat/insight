@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import Image1 from '@/assets/Knowledge-rafiki.svg'
+import Image1 from '@/assets/Book-lover-pana.svg'
 import Image2 from '@/assets/casual-clothes-portrait-attractive-young-woman-standing-office-with-black-bag.webp'
 import Image3 from '@/assets/smiling-happy-indian-student-with-backpack-pointing-his-finger-wall_1_.webp'
 import Image4 from '@/assets/istockphoto-1301397300-612x612-transformed.webp'
